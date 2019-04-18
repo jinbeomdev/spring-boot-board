@@ -1,4 +1,6 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%@ page contentType="text/html; charset=utf-8"%>
+
 <html>
 <head>
 <title><tiles:getAsString name="title" /></title>

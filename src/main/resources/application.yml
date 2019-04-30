@@ -1,5 +1,18 @@
 spring:
   mvc:
     view:
-      prefix: /WEB-INF/jsp/
+      prefix: /WEB-INF/
       suffix: .jsp
+
+  datasource:
+    data: classpath:data-h2.sql
+
+  h2:
+    console:
+      enabled: true
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG

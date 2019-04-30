@@ -13,6 +13,8 @@
         <put-attribute name="menu" value="/WEB-INF/basefragments/_menu.jsp" />
         <put-attribute name="body" value="" />
         <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />
+        <put-list-attribute name="js">
+        </put-list-attribute>
     </definition>
 
     <!-- Home Page  -->
@@ -27,11 +29,33 @@
         <put-attribute name="body" value="/WEB-INF/bodyfragments/_board.jsp" />
     </definition>
 
+    <!-- Write Page  -->
+    <definition name="writePage" extends="base.definition">
+        <put-attribute name="title" value="Home Page" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_write.jsp" />
+        <put-list-attribute name="js" inherit="true">
+            <add-attribute value="/static/js/app/_write.js" />
+        </put-list-attribute>
+    </definition>
+
+    <!-- Update Page  -->
+    <definition name="updatePage" extends="base.definition">
+        <put-attribute name="title" value="Home Page" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_update.jsp" />
+        <put-list-attribute name="js" inherit="true">
+            <add-attribute value="/static/js/app/_update.js" />
+        </put-list-attribute>
+    </definition>
+
+    <!-- Post Page  -->
+    <definition name="postPage" extends="base.definition">
+        <put-attribute name="title" value="Home Page" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_post.jsp" />
+    </definition>
+
     <!-- ContactUs Page -->
     <definition name="contactusPage" extends="base.definition">
         <put-attribute name="title" value="Contact Us" />
         <put-attribute name="body" value="/WEB-INF/bodyfragments/_contactus.jsp" />
     </definition>
-
-
 </tiles-definitions>

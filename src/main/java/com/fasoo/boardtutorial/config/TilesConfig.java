@@ -1,4 +1,4 @@
-package com.fasoo.boardtutorial.tiles;
+package com.fasoo.boardtutorial.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
